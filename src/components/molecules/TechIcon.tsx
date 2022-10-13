@@ -25,7 +25,7 @@ import {
   FaSass,
   FaWordpress,
 } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbLanguage } from "react-icons/tb";
 import { RiFileExcel2Fill } from "react-icons/ri";
 
 type Techs =
@@ -46,13 +46,14 @@ type Techs =
   | "Excel"
   | "MaterialUI"
   | "Python"
-  | "ChakraUI"
+  | "Chakra UI"
   | "Java"
   | "C++"
   | "Jira"
   | "MySQL"
   | "PostgreSql"
-  | "MongoDB";
+  | "MongoDB"
+  | "Multi-language";
 
 const techIcons: Record<Techs, IconType> = {
   TypeScript: SiTypescript,
@@ -71,7 +72,7 @@ const techIcons: Record<Techs, IconType> = {
   PowerBI: SiPowerbi,
   Excel: RiFileExcel2Fill,
   MaterialUI: SiMaterialui,
-  ChakraUI: SiChakraui,
+  "Chakra UI": SiChakraui,
   Java: FaJava,
   Python: FaPython,
   "C++": SiCplusplus,
@@ -79,6 +80,7 @@ const techIcons: Record<Techs, IconType> = {
   MySQL: SiMysql,
   PostgreSql: SiPostgresql,
   MongoDB: SiMongodb,
+  "Multi-language": TbLanguage,
 };
 
 const TechIcon = (tech: String) => {

@@ -15,6 +15,7 @@ const medical_project = {
   managed within Github. Backend developed using Node.js and
   Express.`,
   techs: [
+    "Multi-language",
     "Jira",
     "GitHub",
     "React",
@@ -48,7 +49,7 @@ const optar = {
     "TypeScript",
     "JavaScript",
     "HTML",
-    "ChakraUI",
+    "Chakra UI",
     "CSS",
   ],
 };
@@ -79,7 +80,7 @@ const epo = {
     "TypeScript",
     "JavaScript",
     "HTML",
-    "ChakraUI",
+    "Chakra UI",
     "CSS",
   ],
 };
@@ -106,7 +107,7 @@ const circuito_cidades = {
     "TypeScript",
     "JavaScript",
     "HTML",
-    "ChakraUI",
+    "Chakra UI",
     "CSS",
   ],
 };
@@ -149,7 +150,7 @@ const ei_milhas = {
     "TypeScript",
     "JavaScript",
     "HTML",
-    "ChakraUI",
+    "Chakra UI",
     "CSS",
   ],
 };
@@ -239,7 +240,7 @@ const sport_raffles = {
 };
 
 const cisol = {
-  name: "Optar",
+  name: "CISOL",
   private: false,
   highlight: true,
   sector: "Safety's committee",
@@ -313,7 +314,7 @@ export const my_portfolio = {
     "TypeScript",
     "JavaScript",
     "HTML",
-    "ChakraUI",
+    "Chakra UI",
     "CSS",
   ],
 };
