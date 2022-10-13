@@ -2,21 +2,6 @@ import { Box } from "@chakra-ui/react";
 import FooterCopyright from "../atoms/FooterCopyright";
 import FooterIcons from "../molecules/FooterIcons";
 
-// background-attachment: scroll;
-// background-color: #1f1815;
-// background-image: url(images/overlay.png), url(../../images/bg.jpg);
-// background-position: top left, bottom center;
-// background-position-x: left, center;
-// background-position-y: top, bottom;
-// background-repeat: repeat, no-repeat;
-// background-size: auto, cover;
-// bottom: auto;
-// left: auto;
-// padding: 4em 4em 6em 4em;
-// position: relative;
-// text-align: center;
-// width: 100%;
-
 const Footer = () => {
   return (
     <Box

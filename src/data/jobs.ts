@@ -150,7 +150,8 @@ const ei_milhas = {
     "TypeScript",
     "JavaScript",
     "HTML",
-    "Chakra UI",
+    "Bootstrap",
+    "Sass",
     "CSS",
   ],
 };
