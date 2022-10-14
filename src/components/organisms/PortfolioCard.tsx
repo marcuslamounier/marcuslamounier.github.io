@@ -73,8 +73,9 @@ const PortfolioCard = ({ job, isBrief = true }: Props) => {
                     display="inline-flex"
                     alignItems="center"
                     pr={2}
+                    key={index}
                   >
-                    <Icon key={index} as={TechIcon(tech)} />
+                    <Icon as={TechIcon(tech)} />
                     {!isBrief && (
                       <Text as="span" fontSize="sm" px={1}>
                         {tech}

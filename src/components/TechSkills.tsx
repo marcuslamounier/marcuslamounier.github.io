@@ -16,6 +16,8 @@ const skills: Record<SkillsShowed, Skill[]> = {
   FrontEnd: [
     { name: "Next.js", grade: 3 },
     { name: "React", grade: 3 },
+    { name: "AngularJS", grade: 1 },
+    { name: "Vue.js", grade: 1 },
     { name: "HTML", grade: 3 },
     { name: "CSS", grade: 3 },
     { name: "Chakra UI", grade: 3 },
@@ -43,12 +45,15 @@ const skills: Record<SkillsShowed, Skill[]> = {
     { name: "Excel", grade: 3 },
     { name: "Wordpress", grade: 2 },
     { name: "PowerBI", grade: 2 },
+    { name: "Inkscape", grade: 3 },
+    { name: "Photoshop", grade: 1 },
+    { name: "Figma", grade: 1 },
   ],
 };
 
 const TechSkills = () => {
   return (
-    <VStack divider={<StackDivider borderColor="gray.200" />}>
+    <VStack divider={<StackDivider borderColor="gray.100" />}>
       {Object.keys(skills).map((skillGroup, indexGroup) => {
         return (
           <Box w="100%" key={indexGroup}>

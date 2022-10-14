@@ -29,7 +29,12 @@ export type SkillEnum =
   | "MySQL"
   | "PostgreSql"
   | "MongoDB"
-  | "Multi-language";
+  | "Multi-language"
+  | "Figma"
+  | "Inkscape"
+  | "Photoshop"
+  | "Vue.js"
+  | "AngularJS";
 
 export type Skill = {
   name: SkillEnum;

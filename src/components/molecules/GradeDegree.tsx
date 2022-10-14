@@ -4,10 +4,12 @@ type Props = {
   grade: number;
 };
 
+// const colors = ["green.500", "yellow.300", "red.200"];
+const colors = ["green.300", "teal.200", "yellow.200"];
+
 const GradeDegree = ({ grade }: Props) => {
   return (
     <Grid
-      pr={3}
       placeItems="flex-end"
       w="100%"
       templateRows="repeat(3, 1fr)"
@@ -20,7 +22,7 @@ const GradeDegree = ({ grade }: Props) => {
             w={`${100 - el * 25}%`}
             h="10px"
             borderRadius="5px"
-            bg={grade >= 3 - el ? "blue.500" : "gray.200"}
+            bg={grade >= 3 - el ? colors[el] : "none"}
           />
         );
       })}

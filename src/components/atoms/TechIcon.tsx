@@ -1,8 +1,10 @@
 import { IconType } from "react-icons/lib";
 import {
+  SiAdobephotoshop,
   SiChakraui,
   SiCplusplus,
   SiExpress,
+  SiInkscape,
   SiJavascript,
   SiMaterialui,
   SiMongodb,
@@ -13,8 +15,10 @@ import {
   SiWoo,
 } from "react-icons/si";
 import {
+  FaAngular,
   FaBootstrap,
   FaCss3Alt,
+  FaFigma,
   FaGithubSquare,
   FaHtml5,
   FaJava,
@@ -23,6 +27,7 @@ import {
   FaPython,
   FaReact,
   FaSass,
+  FaVuejs,
   FaWordpress,
 } from "react-icons/fa";
 import { TbBrandNextjs, TbLanguage } from "react-icons/tb";
@@ -55,6 +60,11 @@ const techIcons: Record<SkillEnum, IconType> = {
   PostgreSql: SiPostgresql,
   MongoDB: SiMongodb,
   "Multi-language": TbLanguage,
+  Figma: FaFigma,
+  Inkscape: SiInkscape,
+  Photoshop: SiAdobephotoshop,
+  "Vue.js": FaVuejs,
+  AngularJS: FaAngular,
 };
 
 const TechIcon = (tech: String) => {
