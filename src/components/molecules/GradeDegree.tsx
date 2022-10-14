@@ -4,8 +4,7 @@ type Props = {
   grade: number;
 };
 
-// const colors = ["green.500", "yellow.300", "red.200"];
-const colors = ["green.300", "teal.200", "yellow.200"];
+const colors = ["blue.500", "blue.300", "blue.200"];
 
 const GradeDegree = ({ grade }: Props) => {
   return (
@@ -22,7 +21,7 @@ const GradeDegree = ({ grade }: Props) => {
             w={`${100 - el * 25}%`}
             h="10px"
             borderRadius="5px"
-            bg={grade >= 3 - el ? colors[el] : "none"}
+            bg={grade >= 3 - el ? colors[el] : "gray.50"}
           />
         );
       })}
