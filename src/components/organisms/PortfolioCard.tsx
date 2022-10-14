@@ -6,7 +6,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { JobType } from "../../types/JobType";
-import TechIcon from "../molecules/TechIcon";
+import TechIcon from "../atoms/TechIcon";
 
 type Props = {
   job: JobType;

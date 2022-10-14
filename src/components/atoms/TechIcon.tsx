@@ -3,6 +3,7 @@ import {
   SiChakraui,
   SiCplusplus,
   SiExpress,
+  SiJavascript,
   SiMaterialui,
   SiMongodb,
   SiMysql,
@@ -18,7 +19,6 @@ import {
   FaHtml5,
   FaJava,
   FaJira,
-  FaJsSquare,
   FaNodeJs,
   FaPython,
   FaReact,
@@ -27,39 +27,13 @@ import {
 } from "react-icons/fa";
 import { TbBrandNextjs, TbLanguage } from "react-icons/tb";
 import { RiFileExcel2Fill } from "react-icons/ri";
+import { SkillEnum } from "../../types/SkillType";
 
-type Techs =
-  | "TypeScript"
-  | "node.js"
-  | "GitHub"
-  | "JavaScript"
-  | "CSS"
-  | "express.js"
-  | "HTML"
-  | "Next.js"
-  | "React"
-  | "Bootstrap"
-  | "Sass"
-  | "Wordpress"
-  | "Woocommerce"
-  | "PowerBI"
-  | "Excel"
-  | "MaterialUI"
-  | "Python"
-  | "Chakra UI"
-  | "Java"
-  | "C++"
-  | "Jira"
-  | "MySQL"
-  | "PostgreSql"
-  | "MongoDB"
-  | "Multi-language";
-
-const techIcons: Record<Techs, IconType> = {
+const techIcons: Record<SkillEnum, IconType> = {
   TypeScript: SiTypescript,
   "node.js": FaNodeJs,
   GitHub: FaGithubSquare,
-  JavaScript: FaJsSquare,
+  JavaScript: SiJavascript,
   CSS: FaCss3Alt,
   "express.js": SiExpress,
   HTML: FaHtml5,
@@ -68,7 +42,7 @@ const techIcons: Record<Techs, IconType> = {
   Bootstrap: FaBootstrap,
   Sass: FaSass,
   Wordpress: FaWordpress,
-  Woocommerce: SiWoo,
+  WooCommerce: SiWoo,
   PowerBI: SiPowerbi,
   Excel: RiFileExcel2Fill,
   MaterialUI: SiMaterialui,

@@ -25,15 +25,22 @@ const Menu = ({ path }: Props) => {
         as="div"
         spacing={3}
         justifyContent={{ base: "center", lg: "flex-end" }}
-        divider={<StackDivider borderColor="link" h="1em" alignSelf="center" />}
+        divider={
+          <StackDivider
+            borderColor="link"
+            h="1em"
+            alignSelf="center"
+          />
+        }
       >
         {RoutesInfo.map((menuItem, index) => (
           <CustomLink
             key={index}
-            label={`${menuItem.title}`}
             url={`${menuItem.path}`}
             isCurrent={menuItem.title === path}
-          />
+          >
+            {menuItem.title}
+          </CustomLink>
         ))}
       </HStack>
     </Box>

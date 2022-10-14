@@ -1,19 +1,19 @@
 import { StackDivider, VStack } from "@chakra-ui/react";
+import Contact from "../components/Contact";
 import Section from "../components/organisms/Section";
-import Portfolio from "../components/Portfolio";
 
-const PortfolioPage = () => {
+const ContactPage = () => {
   return (
     <VStack
       divider={<StackDivider borderColor="gray.200" />}
       spacing={12}
       align="stretch"
     >
-      <Section title="Portfolio">
-        <Portfolio />
+      <Section title="Contact me">
+        <Contact />
       </Section>
     </VStack>
   );
 };
 
-export default PortfolioPage;
+export default ContactPage;

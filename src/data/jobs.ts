@@ -237,7 +237,7 @@ const sport_raffles = {
   organization. Currently inactive. Website built in
   Wordpress. Payment solution used was MercadoPago and
   eCommerce solution used was WooCommerce.`,
-  techs: ["Wordpress", "Woocommerce"],
+  techs: ["Wordpress", "WooCommerce"],
 };
 
 const cisol = {

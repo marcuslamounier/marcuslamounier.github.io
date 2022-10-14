@@ -5,17 +5,26 @@ const Header = () => {
     <Box
       as="header"
       backgroundImage={`url("../../images/bg.jpg")`}
-      backgroundPosition={{ base: "center center", lg: "top center" }}
-      backgroundSize={{ md: "130%", base: "cover" }}
+      backgroundPosition={{
+        base: "center center",
+        lg: "top center",
+      }}
+      backgroundSize={{
+        base: "cover",
+        md: "100%",
+        lg: "180%",
+        xl: "130%",
+        "2xl": "100%",
+      }}
       backgroundRepeat="no-repeat"
       backgroundBlendMode="difference"
       backgroundColor="gray.900"
       width={{ base: "100%", lg: "30%" }}
       display={{ base: "block", lg: "flex" }}
       flex={{ base: "0 1 auto", lg: "inherit" }}
-      padding={{ base: "1.5em 1.5em", "2xl": "8em 4em" }}
-      marginTop={{ base: "auto", lg: "35px" }}
+      padding={{ base: "1.5em", "2xl": "4em" }}
       paddingTop="4em"
+      marginTop={{ base: "auto", lg: "35px" }}
       flexDir="column"
       alignItems="flex-end"
       justifyContent="space-between"

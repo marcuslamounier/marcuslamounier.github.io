@@ -1,22 +1,26 @@
+import { ReactNode } from "react";
 import { Link as ChakraLink } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 type Props = {
-  label: String;
+  children: ReactNode;
   url: String;
   isCurrent?: boolean;
 };
 
-const CustomLink = ({ label, url, isCurrent = false }: Props) => {
+const CustomLink = ({
+  children,
+  url,
+  isCurrent = false,
+}: Props) => {
   return (
-    <RouterLink to={`${url}`}>
-      <ChakraLink
-        color={isCurrent ? "white" : "inherit"}
-        borderBottomStyle={isCurrent ? "none" : "inherit"}
-      >
-        {label}
-      </ChakraLink>
-    </RouterLink>
+    <ChakraLink
+      as="span"
+      color={isCurrent ? "white" : "inherit"}
+      borderBottomStyle={isCurrent ? "none" : "inherit"}
+    >
+      <RouterLink to={`${url}`}>{children}</RouterLink>
+    </ChakraLink>
   );
 };
 
