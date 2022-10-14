@@ -9,7 +9,7 @@ import TechSkill from "./organisms/TechSkill";
 
 type SkillsShowed = Extract<
   SkillGroupEnum,
-  "FrontEnd" | "Languages" | "Backend" | "Others"
+  "FrontEnd" | "Languages" | "BackEnd" | "Others"
 >;
 
 const skills: Record<SkillsShowed, Skill[]> = {
@@ -25,7 +25,7 @@ const skills: Record<SkillsShowed, Skill[]> = {
     { name: "MaterialUI", grade: 2 },
     { name: "Sass", grade: 2 },
   ],
-  Backend: [
+  BackEnd: [
     { name: "node.js", grade: 2 },
     { name: "express.js", grade: 2 },
     { name: "MySQL", grade: 2 },
@@ -51,7 +51,7 @@ const skills: Record<SkillsShowed, Skill[]> = {
   ],
 };
 
-const TechSkills = () => {
+const Skills = () => {
   return (
     <VStack divider={<StackDivider borderColor="gray.100" />}>
       {Object.keys(skills).map((skillGroup, indexGroup) => {
@@ -74,4 +74,4 @@ const TechSkills = () => {
   );
 };
 
-export default TechSkills;
+export default Skills;

@@ -17,7 +17,7 @@ const Section = ({ children, title }: Props) => {
           //     mb: 0,
           //   },
         },
-        "*": {
+        ">*": {
           "&:last-child": {
             mb: 0,
           },

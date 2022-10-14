@@ -3,6 +3,7 @@ import AboutMeBrief from "../components/AboutMe";
 import CustomLink from "../components/atoms/CustomLink";
 import Section from "../components/organisms/Section";
 import PortfolioBrief from "../components/PortfolioBrief";
+import SkillsBrief from "../components/SkillsBrief";
 
 const HomePage = () => {
   return (
@@ -13,8 +14,12 @@ const HomePage = () => {
     >
       <Section title="About Me">
         <AboutMeBrief />
-        <CustomLink url="/about-me">
-          More about me...
+      </Section>
+
+      <Section title="Tech Skills">
+        <SkillsBrief />
+        <CustomLink url="/skills">
+          Know more about my skills...
         </CustomLink>
       </Section>
 

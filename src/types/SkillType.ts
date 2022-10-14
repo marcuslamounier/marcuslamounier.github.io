@@ -1,6 +1,6 @@
 export type SkillGroupEnum =
   | "FrontEnd"
-  | "Backend"
+  | "BackEnd"
   | "Languages"
   | "Others";
 

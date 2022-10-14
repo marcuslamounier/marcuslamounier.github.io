@@ -1,6 +1,6 @@
 import { StackDivider, VStack } from "@chakra-ui/react";
 import Section from "../components/organisms/Section";
-import TechSkills from "../components/TechSkills";
+import Skills from "../components/Skills";
 
 const SkillsPage = () => {
   return (
@@ -10,7 +10,7 @@ const SkillsPage = () => {
       align="stretch"
     >
       <Section title="Tech Skills">
-        <TechSkills />
+        <Skills />
       </Section>
     </VStack>
   );
