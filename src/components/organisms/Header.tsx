@@ -1,6 +1,6 @@
 import { Box, Image, Link, Text } from "@chakra-ui/react";
 
-const Header = () => {
+export const Header = () => {
   return (
     <Box
       as="header"
@@ -83,5 +83,3 @@ const Header = () => {
     </Box>
   );
 };
-
-export default Header;

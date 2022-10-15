@@ -18,7 +18,7 @@ const icons: IconProps[] = [
   },
 ];
 
-const FooterIcons = () => {
+export const FooterIcons = () => {
   return (
     <HStack justifyContent="flex-end">
       {icons.map((icon, index) => {
@@ -36,5 +36,3 @@ const FooterIcons = () => {
     </HStack>
   );
 };
-
-export default FooterIcons;

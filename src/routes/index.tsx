@@ -2,12 +2,12 @@ import {
   createBrowserRouter,
   RouteObject,
 } from "react-router-dom";
-import MainTemplate from "../components/templates/MainTemplate";
-import ErrorPageNotFound from "../components/molecules/ErrorPageNotFound";
-import HomePage from "../pages/HomePage";
-import PortfolioPage from "../pages/PortfolioPage";
-import ContactPage from "../pages/ContactPage";
-import SkillsPage from "../pages/SkillsPage";
+import { MainTemplate } from "../components/templates/MainTemplate";
+import { ErrorPageNotFound } from "../components/molecules/ErrorPageNotFound";
+import { HomePage } from "../pages/HomePage";
+import { PortfolioPage } from "../pages/PortfolioPage";
+import { ContactPage } from "../pages/ContactPage";
+import { SkillsPage } from "../pages/SkillsPage";
 
 type RoutePageProps = {
   path: String;

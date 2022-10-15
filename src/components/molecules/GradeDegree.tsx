@@ -6,7 +6,7 @@ type Props = {
 
 const colors = ["blue.500", "blue.300", "blue.200"];
 
-const GradeDegree = ({ grade }: Props) => {
+export const GradeDegree = ({ grade }: Props) => {
   return (
     <Grid
       as="span"
@@ -29,5 +29,3 @@ const GradeDegree = ({ grade }: Props) => {
     </Grid>
   );
 };
-
-export default GradeDegree;

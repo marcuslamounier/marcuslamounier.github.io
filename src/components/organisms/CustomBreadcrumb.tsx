@@ -1,11 +1,15 @@
-import { Breadcrumb, BreadcrumbItem, Text } from "@chakra-ui/react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Text,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 type Props = {
   path: String;
 };
 
-const CustomBreadcrumb = ({ path }: Props) => {
+export const CustomBreadcrumb = ({ path }: Props) => {
   return (
     <Breadcrumb fontStyle="italic" mb={4}>
       <BreadcrumbItem isCurrentPage={path === "Home"}>
@@ -24,5 +28,3 @@ const CustomBreadcrumb = ({ path }: Props) => {
     </Breadcrumb>
   );
 };
-
-export default CustomBreadcrumb;

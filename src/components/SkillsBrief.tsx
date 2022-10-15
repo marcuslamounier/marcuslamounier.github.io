@@ -1,6 +1,6 @@
 import { Box, Icon, Text } from "@chakra-ui/react";
 import { SkillEnum } from "../types/SkillType";
-import TechIcon from "./atoms/TechIcon";
+import { TechIcon } from "./atoms/TechIcon";
 
 const skills: SkillEnum[] = [
   "Git",
@@ -19,7 +19,7 @@ const skills: SkillEnum[] = [
   "Figma",
 ];
 
-const SkillsBrief = () => {
+export const SkillsBrief = () => {
   return (
     <>
       <Text as="p">Some technologies I work with...</Text>
@@ -39,5 +39,3 @@ const SkillsBrief = () => {
     </>
   );
 };
-
-export default SkillsBrief;

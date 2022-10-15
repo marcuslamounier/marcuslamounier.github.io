@@ -1,13 +1,13 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import Footer from "../organisms/Footer";
-import Header from "../organisms/Header";
+import { Footer } from "../organisms/Footer";
+import { Header } from "../organisms/Header";
 
 type Props = {
   children: ReactNode;
 };
 
-const PageTemplate = ({ children }: Props) => {
+export const PageTemplate = ({ children }: Props) => {
   return (
     <Flex
       as="div"
@@ -28,7 +28,11 @@ const PageTemplate = ({ children }: Props) => {
         flex={{ base: "1 1 auto", lg: "inherit" }}
         overflow="auto"
       >
-        <Box as="div" px={{ base: 4, md: 8, lg: 16 }} py={{ base: 6, md: 14 }}>
+        <Box
+          as="div"
+          px={{ base: 4, md: 8, lg: 16 }}
+          py={{ base: 6, md: 14 }}
+        >
           {children}
         </Box>
       </Box>
@@ -36,5 +40,3 @@ const PageTemplate = ({ children }: Props) => {
     </Flex>
   );
 };
-
-export default PageTemplate;

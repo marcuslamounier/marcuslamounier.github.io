@@ -1,12 +1,12 @@
 import { Box, HStack, StackDivider } from "@chakra-ui/react";
 import { RoutesInfo } from "../../routes";
-import CustomLink from "../atoms/CustomLink";
+import { CustomLink } from "../atoms/CustomLink";
 
 type Props = {
   path: String;
 };
 
-const Menu = ({ path }: Props) => {
+export const Menu = ({ path }: Props) => {
   return (
     <Box
       as="nav"
@@ -46,5 +46,3 @@ const Menu = ({ path }: Props) => {
     </Box>
   );
 };
-
-export default Menu;

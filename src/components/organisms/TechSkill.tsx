@@ -6,15 +6,15 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { SkillType } from "../../types/SkillType";
-import TechIcon from "../atoms/TechIcon";
-import GradeDegree from "../molecules/GradeDegree";
-import GradeTooltip from "../molecules/GradeTooltip";
+import { TechIcon } from "../atoms/TechIcon";
+import { GradeDegree } from "../molecules/GradeDegree";
+import { GradeTooltip } from "../molecules/GradeTooltip";
 
 type Props = {
   skill: SkillType;
 };
 
-const TechSkill = ({ skill }: Props) => {
+export const TechSkill = ({ skill }: Props) => {
   return (
     <GradeTooltip skill={skill}>
       <Box
@@ -41,5 +41,3 @@ const TechSkill = ({ skill }: Props) => {
     </GradeTooltip>
   );
 };
-
-export default TechSkill;

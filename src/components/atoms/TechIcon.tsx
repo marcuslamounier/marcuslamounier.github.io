@@ -75,8 +75,6 @@ const techIcons: Record<SkillEnum, IconType> = {
   GraphQL: SiGraphql,
 };
 
-const TechIcon = (tech: String) => {
+export const TechIcon = (tech: String) => {
   return techIcons[tech as keyof typeof techIcons];
 };
-
-export default TechIcon;

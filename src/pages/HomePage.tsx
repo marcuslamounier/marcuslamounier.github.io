@@ -1,11 +1,11 @@
 import { StackDivider, VStack } from "@chakra-ui/react";
-import AboutMeBrief from "../components/AboutMe";
-import CustomLink from "../components/atoms/CustomLink";
-import Section from "../components/organisms/Section";
-import PortfolioBrief from "../components/PortfolioBrief";
-import SkillsBrief from "../components/SkillsBrief";
+import { AboutMeBrief } from "../components/AboutMe";
+import { CustomLink } from "../components/atoms/CustomLink";
+import { Section } from "../components/organisms/Section";
+import { PortfolioBrief } from "../components/PortfolioBrief";
+import { SkillsBrief } from "../components/SkillsBrief";
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <VStack
       divider={<StackDivider borderColor="gray.200" />}
@@ -32,5 +32,3 @@ const HomePage = () => {
     </VStack>
   );
 };
-
-export default HomePage;

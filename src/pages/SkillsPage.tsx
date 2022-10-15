@@ -1,8 +1,8 @@
 import { StackDivider, VStack } from "@chakra-ui/react";
-import Section from "../components/organisms/Section";
-import Skills from "../components/Skills";
+import { Section } from "../components/organisms/Section";
+import { Skills } from "../components/Skills";
 
-const SkillsPage = () => {
+export const SkillsPage = () => {
   return (
     <VStack
       divider={<StackDivider borderColor="gray.200" />}
@@ -15,5 +15,3 @@ const SkillsPage = () => {
     </VStack>
   );
 };
-
-export default SkillsPage;

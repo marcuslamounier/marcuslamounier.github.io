@@ -1,4 +1,4 @@
-const text = {
+export const text = {
   h1: {
     fontSize: { base: "3xl !important", lg: "4xl !important" },
   },
@@ -16,5 +16,3 @@ const text = {
     mb: { base: 4, lg: 8 },
   },
 };
-
-export default text;

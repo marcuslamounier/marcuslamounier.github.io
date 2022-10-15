@@ -6,7 +6,7 @@ type Props = {
   title: String;
 };
 
-const Section = ({ children, title }: Props) => {
+export const Section = ({ children, title }: Props) => {
   return (
     <Box
       as="section"
@@ -29,5 +29,3 @@ const Section = ({ children, title }: Props) => {
     </Box>
   );
 };
-
-export default Section;

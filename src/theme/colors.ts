@@ -1,6 +1,6 @@
 import { Colors } from "@chakra-ui/react";
 
-const colors: Colors = {
+export const colors: Colors = {
   link: "#49bf9d",
   gray: {
     50: "#F7F7F7",
@@ -34,5 +34,3 @@ const colors: Colors = {
   //   100: '#D4EDFD'
   // },
 };
-
-export default colors;

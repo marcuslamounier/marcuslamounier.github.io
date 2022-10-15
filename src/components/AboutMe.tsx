@@ -1,6 +1,6 @@
 import { Text } from "@chakra-ui/react";
 
-const AboutMeBrief = () => {
+export const AboutMeBrief = () => {
   return (
     <>
       <Text as="p">
@@ -21,5 +21,3 @@ const AboutMeBrief = () => {
     </>
   );
 };
-
-export default AboutMeBrief;

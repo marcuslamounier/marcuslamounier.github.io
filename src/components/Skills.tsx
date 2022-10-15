@@ -5,7 +5,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { SkillType, SkillGroupEnum } from "../types/SkillType";
-import TechSkill from "./organisms/TechSkill";
+import { TechSkill } from "./organisms/TechSkill";
 
 type SkillsShowed = Extract<
   SkillGroupEnum,
@@ -53,7 +53,7 @@ const skills: Record<SkillsShowed, SkillType[]> = {
   ],
 };
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <VStack divider={<StackDivider borderColor="gray.100" />}>
       {Object.keys(skills).map((skillGroup, indexGroup) => {
@@ -75,5 +75,3 @@ const Skills = () => {
     </VStack>
   );
 };
-
-export default Skills;

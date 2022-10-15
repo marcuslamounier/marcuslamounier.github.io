@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
-import CustomBreadcrumb from "../organisms/CustomBreadcrumb";
-import Menu from "../organisms/Menu";
+import { CustomBreadcrumb } from "../organisms/CustomBreadcrumb";
+import { Menu } from "../organisms/Menu";
 
 type Props = {
   children: ReactNode;
   title: String;
 };
 
-const MainTemplate = ({ children, title }: Props) => {
+export const MainTemplate = ({ children, title }: Props) => {
   return (
     <>
       <Menu path={title} />
@@ -16,5 +16,3 @@ const MainTemplate = ({ children, title }: Props) => {
     </>
   );
 };
-
-export default MainTemplate;

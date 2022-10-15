@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import ErrorMessage from "../atoms/ErrorMessage";
+import { ErrorMessage } from "../atoms/ErrorMessage";
 
 type Props = {
   label: String;
 };
 
-const ErrorPageNotFound = ({ label }: Props) => {
+export const ErrorPageNotFound = ({ label }: Props) => {
   return (
     <>
       <ErrorMessage label={label} />
@@ -13,5 +13,3 @@ const ErrorPageNotFound = ({ label }: Props) => {
     </>
   );
 };
-
-export default ErrorPageNotFound;

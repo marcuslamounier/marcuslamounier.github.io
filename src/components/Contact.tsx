@@ -1,6 +1,6 @@
 import { Link, Text } from "@chakra-ui/react";
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <Text as="p">
       Did you like my profile? Please contact me via{" "}
@@ -14,5 +14,3 @@ const Contact = () => {
     </Text>
   );
 };
-
-export default Contact;

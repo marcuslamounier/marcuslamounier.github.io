@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import PageTemplate from "./components/templates/PageTemplate";
+import { PageTemplate } from "./components/templates/PageTemplate";
 import "@fontsource/source-sans-pro";
 import { ChakraProvider } from "@chakra-ui/react";
 import { defaultTheme } from "./theme";
@@ -9,7 +9,7 @@ import { AppRouter } from "./routes";
 
 const title: String = "Marcus V | Software Engineer";
 
-function App() {
+export function App() {
   return (
     <React.Fragment>
       <Helmet>
@@ -23,5 +23,3 @@ function App() {
     </React.Fragment>
   );
 }
-
-export default App;

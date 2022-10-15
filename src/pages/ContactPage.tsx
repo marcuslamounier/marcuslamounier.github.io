@@ -1,8 +1,8 @@
 import { StackDivider, VStack } from "@chakra-ui/react";
-import Contact from "../components/Contact";
-import Section from "../components/organisms/Section";
+import { Contact } from "../components/Contact";
+import { Section } from "../components/organisms/Section";
 
-const ContactPage = () => {
+export const ContactPage = () => {
   return (
     <VStack
       divider={<StackDivider borderColor="gray.200" />}
@@ -15,5 +15,3 @@ const ContactPage = () => {
     </VStack>
   );
 };
-
-export default ContactPage;

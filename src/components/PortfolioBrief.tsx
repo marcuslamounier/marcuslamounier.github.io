@@ -1,13 +1,11 @@
 import { Grid, Text } from "@chakra-ui/react";
 import { highlightedJobs } from "../data/jobs";
-import PortfolioCard from "./organisms/PortfolioCard";
+import { PortfolioCard } from "./organisms/PortfolioCard";
 
-const PortfolioBrief = () => {
+export const PortfolioBrief = () => {
   return (
     <>
-      <Text as="p">
-        Recent projects I worked...
-      </Text>
+      <Text as="p">Recent projects I worked...</Text>
       <Grid
         templateColumns={{
           base: "repeat(1, 1fr)",
@@ -24,5 +22,3 @@ const PortfolioBrief = () => {
     </>
   );
 };
-
-export default PortfolioBrief;

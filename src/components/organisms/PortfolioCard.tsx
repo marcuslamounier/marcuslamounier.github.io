@@ -6,14 +6,17 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { JobType } from "../../types/JobType";
-import TechIcon from "../atoms/TechIcon";
+import { TechIcon } from "../atoms/TechIcon";
 
 type Props = {
   job: JobType;
   isBrief?: Boolean;
 };
 
-const PortfolioCard = ({ job, isBrief = true }: Props) => {
+export const PortfolioCard = ({
+  job,
+  isBrief = true,
+}: Props) => {
   return (
     <Box
       maxW="sm"
@@ -91,5 +94,3 @@ const PortfolioCard = ({ job, isBrief = true }: Props) => {
     </Box>
   );
 };
-
-export default PortfolioCard;

@@ -9,7 +9,7 @@ type Props = {
 
 const levels = ["Basics", "Intermediate", "Advanced"];
 
-const GradeTooltip = ({ children, skill }: Props) => {
+export const GradeTooltip = ({ children, skill }: Props) => {
   return (
     <Tooltip
       placement="top"
@@ -29,5 +29,3 @@ const GradeTooltip = ({ children, skill }: Props) => {
     </Tooltip>
   );
 };
-
-export default GradeTooltip;

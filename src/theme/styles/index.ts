@@ -1,13 +1,11 @@
-import cssObjects from "./cssObjects";
-import text from "./text";
-import tagElements from "./tagElements";
+import { cssObjects } from "./cssObjects";
+import { text } from "./text";
+import { tagElements } from "./tagElements";
 
-const styles = {
+export const styles = {
   global: {
     ...tagElements,
     ...cssObjects,
     ...text,
   },
 };
-
-export default styles;

@@ -8,7 +8,7 @@ type Props = {
   isCurrent?: boolean;
 };
 
-const CustomLink = ({
+export const CustomLink = ({
   children,
   url,
   isCurrent = false,
@@ -23,5 +23,3 @@ const CustomLink = ({
     </ChakraLink>
   );
 };
-
-export default CustomLink;

@@ -1,8 +1,8 @@
 import { Grid } from "@chakra-ui/react";
 import { jobHistory } from "../data/jobs";
-import PortfolioCard from "./organisms/PortfolioCard";
+import { PortfolioCard } from "./organisms/PortfolioCard";
 
-const Portfolio = () => {
+export const Portfolio = () => {
   return (
     <Grid
       templateColumns={{
@@ -19,5 +19,3 @@ const Portfolio = () => {
     </Grid>
   );
 };
-
-export default Portfolio;

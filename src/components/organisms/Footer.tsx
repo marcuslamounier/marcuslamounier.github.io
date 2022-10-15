@@ -1,8 +1,8 @@
 import { Box } from "@chakra-ui/react";
-import FooterCopyright from "../atoms/FooterCopyright";
-import FooterIcons from "../molecules/FooterIcons";
+import {FooterCopyright} from "../atoms/FooterCopyright";
+import {FooterIcons} from "../molecules/FooterIcons";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Box
       as="footer"
@@ -24,5 +24,3 @@ const Footer = () => {
     </Box>
   );
 };
-
-export default Footer;
