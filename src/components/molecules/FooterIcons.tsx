@@ -23,7 +23,12 @@ const FooterIcons = () => {
     <HStack justifyContent="flex-end">
       {icons.map((icon, index) => {
         return (
-          <Link key={index} href={`${icon.url}`} color="gray.500">
+          <Link
+            key={index}
+            href={`${icon.url}`}
+            color="gray.500"
+            target="_blank"
+          >
             <Icon boxSize={"2em"} as={icon.icon} />
           </Link>
         );

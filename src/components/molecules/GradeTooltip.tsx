@@ -9,7 +9,7 @@ type Props = {
 
 const levels = ["Basics", "Intermediate", "Advanced"];
 
-const GradeTooltip = ({ children, skill}: Props) => {
+const GradeTooltip = ({ children, skill }: Props) => {
   return (
     <Tooltip
       placement="top"
@@ -17,7 +17,9 @@ const GradeTooltip = ({ children, skill}: Props) => {
         <Box as="div" textAlign="center">
           {skill.name}
           <br />
-          {Array(skill.grade * 2 - 1).fill("★").join(" ")}
+          {Array(skill.grade * 2 - 1)
+            .fill("★")
+            .join(" ")}
           <br />
           {levels[skill.grade - 1]}
         </Box>

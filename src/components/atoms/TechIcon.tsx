@@ -72,7 +72,7 @@ const techIcons: Record<SkillEnum, IconType> = {
   AngularJS: FaAngular,
   "Tailwind CSS": SiTailwindcss,
   Git: SiGit,
-  "GraphQL": SiGraphql
+  GraphQL: SiGraphql,
 };
 
 const TechIcon = (tech: String) => {
