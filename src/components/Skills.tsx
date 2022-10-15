@@ -4,7 +4,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { Skill, SkillGroupEnum } from "../types/SkillType";
+import { SkillType, SkillGroupEnum } from "../types/SkillType";
 import TechSkill from "./organisms/TechSkill";
 
 type SkillsShowed = Extract<
@@ -12,18 +12,20 @@ type SkillsShowed = Extract<
   "FrontEnd" | "Languages" | "BackEnd" | "Others"
 >;
 
-const skills: Record<SkillsShowed, Skill[]> = {
+const skills: Record<SkillsShowed, SkillType[]> = {
   FrontEnd: [
     { name: "Next.js", grade: 3 },
     { name: "React", grade: 3 },
+    { name: "Vue.js", grade: 2 },
     { name: "AngularJS", grade: 1 },
-    { name: "Vue.js", grade: 1 },
     { name: "HTML", grade: 3 },
     { name: "CSS", grade: 3 },
     { name: "Chakra UI", grade: 3 },
     { name: "Bootstrap", grade: 3 },
     { name: "MaterialUI", grade: 2 },
+    { name: "Tailwind CSS", grade: 2 },
     { name: "Sass", grade: 2 },
+    { name: "Figma", grade: 2 },
   ],
   BackEnd: [
     { name: "node.js", grade: 2 },
@@ -31,6 +33,7 @@ const skills: Record<SkillsShowed, Skill[]> = {
     { name: "MySQL", grade: 2 },
     { name: "PostgreSql", grade: 2 },
     { name: "MongoDB", grade: 2 },
+    { name: "GraphQL", grade: 1 },
   ],
   Languages: [
     { name: "TypeScript", grade: 3 },
@@ -40,14 +43,13 @@ const skills: Record<SkillsShowed, Skill[]> = {
     { name: "Java", grade: 1 },
   ],
   Others: [
-    { name: "GitHub", grade: 3 },
+    { name: "Git", grade: 3 },
     { name: "Jira", grade: 2 },
     { name: "Excel", grade: 3 },
     { name: "Wordpress", grade: 2 },
     { name: "PowerBI", grade: 2 },
     { name: "Inkscape", grade: 3 },
     { name: "Photoshop", grade: 1 },
-    { name: "Figma", grade: 1 },
   ],
 };
 

@@ -3,14 +3,16 @@ import { SkillEnum } from "../types/SkillType";
 import TechIcon from "./atoms/TechIcon";
 
 const skills: SkillEnum[] = [
+  "Git",
   "Next.js",
   "React",
   "Chakra UI",
   "Bootstrap",
+  "MaterialUI",
+  "Tailwind CSS",
   "node.js",
   "PostgreSql",
   "MongoDB",
-  "GitHub",
   "Jira",
   "Wordpress",
   "Inkscape",

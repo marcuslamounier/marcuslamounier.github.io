@@ -1,9 +1,13 @@
 import { IconType } from "react-icons/lib";
+import { SkillEnum } from "../../types/SkillType";
 import {
   SiAdobephotoshop,
   SiChakraui,
   SiCplusplus,
   SiExpress,
+  SiGit,
+  SiGitlab,
+  SiGraphql,
   SiInkscape,
   SiJavascript,
   SiMaterialui,
@@ -11,6 +15,7 @@ import {
   SiMysql,
   SiPostgresql,
   SiPowerbi,
+  SiTailwindcss,
   SiTypescript,
   SiWoo,
 } from "react-icons/si";
@@ -32,12 +37,12 @@ import {
 } from "react-icons/fa";
 import { TbBrandNextjs, TbLanguage } from "react-icons/tb";
 import { RiFileExcel2Fill } from "react-icons/ri";
-import { SkillEnum } from "../../types/SkillType";
 
 const techIcons: Record<SkillEnum, IconType> = {
   TypeScript: SiTypescript,
   "node.js": FaNodeJs,
   GitHub: FaGithubSquare,
+  GitLab: SiGitlab,
   JavaScript: SiJavascript,
   CSS: FaCss3Alt,
   "express.js": SiExpress,
@@ -65,6 +70,9 @@ const techIcons: Record<SkillEnum, IconType> = {
   Photoshop: SiAdobephotoshop,
   "Vue.js": FaVuejs,
   AngularJS: FaAngular,
+  "Tailwind CSS": SiTailwindcss,
+  Git: SiGit,
+  "GraphQL": SiGraphql
 };
 
 const TechIcon = (tech: String) => {

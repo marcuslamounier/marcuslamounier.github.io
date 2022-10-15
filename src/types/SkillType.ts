@@ -8,6 +8,8 @@ export type SkillEnum =
   | "TypeScript"
   | "node.js"
   | "GitHub"
+  | "GitLab"
+  | "Git"
   | "JavaScript"
   | "CSS"
   | "express.js"
@@ -34,9 +36,11 @@ export type SkillEnum =
   | "Inkscape"
   | "Photoshop"
   | "Vue.js"
-  | "AngularJS";
+  | "AngularJS"
+  | "Tailwind CSS"
+  | "GraphQL";
 
-export type Skill = {
+export type SkillType = {
   name: SkillEnum;
   grade: 1 | 2 | 3;
 };

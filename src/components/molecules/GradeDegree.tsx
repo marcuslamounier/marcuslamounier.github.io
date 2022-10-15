@@ -9,6 +9,7 @@ const colors = ["blue.500", "blue.300", "blue.200"];
 const GradeDegree = ({ grade }: Props) => {
   return (
     <Grid
+      as="span"
       placeItems="flex-end"
       w="100%"
       templateRows="repeat(3, 1fr)"
