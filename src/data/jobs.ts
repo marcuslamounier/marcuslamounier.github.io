@@ -32,9 +32,9 @@ const optar = {
   private: false,
   highlight: true,
   sector: "Job Recruitment",
-  descriptionBrief: `Web-based system for a job recruit
+  descriptionBrief: `Web-based system for a job recruitment
   company.`,
-  description: `Web-based system for a job recruit company.
+  description: `Web-based system for a job recruitment company.
   Website development used the React-based structure Next.js.
   The languages used were JavaScript and Typescript and, of
   course, HTML. Design system was created using CSS and Chakra
@@ -63,10 +63,10 @@ const epo = {
   descriptionBrief: `Web-based system for supporting law
   students while studying for law entities professional
   tests.`,
-  description: `Website based in customer's last website
-  layout. The project is a transcription of a WordPress website
-  into a modern technology website. The customer business is
-  training students for taking law entities professional tests.
+  description: `Web system based in customer's previous layout.
+  The project is a transcription of a WordPress old version
+  into a modern tech web system. The customer business is to
+  train students for taking law entities professional tests.
   Website development used the React-based structure Next.js.
   The languages used were JavaScript and Typescript and, of
   course, HTML. Design system was created using CSS and Chakra
@@ -306,9 +306,10 @@ export const my_portfolio = {
   description: `This project is very special for me. Although
   it seems to be a simple portfolio project, it was made using
   many concepts of web development: Routes, Atomic Design,
-  Error Handling, Custom Theme for Design System, etc. New
-  versions will be published since I find some time available.
-  You can find the code at GitHub. Feel free to use it!`,
+  Error Handling, Custom Theme for Design System, GitHub pages
+  deploy, etc. New   versions will be published since I find
+  some time available. You can find the code at GitHub. Feel
+  free to use it!`,
   techs: [
     "GitHub",
     "React",
